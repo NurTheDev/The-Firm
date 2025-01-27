@@ -1,0 +1,33 @@
+@import "tailwindcss";
+/* Google Font Link */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* Google Font Link */
+:root {
+  --Primary-font-color: #1e1e1e;
+  --primaryColor: #faca10;
+  --secondaryColor: #f2f2f2;
+  --tertiaryColor: #fbfbfb;
+  --whiteColor: #ffffff;
+  /* Font */
+  --nunito: "Nunito", sans-serif;
+  --lora: "Lora", serif;
+}
+@theme {
+  --color-primary: var(--primaryColor);
+  --color-secondary: var(--secondaryColor);
+  --color-tertiary: var(--tertiaryColor);
+  --color-white: var(--whiteColor);
+  --font-nunito: var(--nunito);
+  --font-lora: var(--lora);
+}
+@layer components {
+  .container {
+    @apply container mx-auto; /* Add your styles here */
+  }
+  .flexRowBetween {
+    @apply flex flex-row items-center justify-between; /* Add your styles here */
+  }
+  .flexRow {
+    @apply flex flex-row items-center; /* Add your styles here */
+  }
+}
