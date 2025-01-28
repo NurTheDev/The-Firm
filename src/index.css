@@ -13,6 +13,7 @@
   --lora: "Lora", serif;
 }
 @theme {
+  --color-primaryFont: var(--Primary-font-color);
   --color-primary: var(--primaryColor);
   --color-secondary: var(--secondaryColor);
   --color-tertiary: var(--tertiaryColor);
@@ -29,5 +30,28 @@
   }
   .flexRow {
     @apply flex flex-row items-center; /* Add your styles here */
+  }
+  .hoverItem {
+    position: relative;
+  }
+  .hoverItem::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: var(--primaryColor);
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+  .hoverItem:hover::before {
+    width: 100%;
+  }
+  .btn {
+    @apply px-5 py-2 bg-primary text-white rounded-md text-lg font-bold transition duration-200; /* Add your styles here */
+  }
+  .btn:hover {
+    @apply bg-primaryFont text-white /* Add your styles here */;
   }
 }
