@@ -91,6 +91,18 @@
   .titleUnderline:hover::before {
     width: 0;
   }
+  .imgGrayscale {
+    filter: grayscale(100%);
+    transition: all 0.3s;
+  }
+  .imgGrayscale:hover {
+    filter: grayscale(0%);
+    transform: translate(0, -10px);
+    -webkit-transform: translate();
+    -moz-transform: translate();
+    -ms-transform: translate();
+    -o-transform: translate();
+  }
 }
 @layer utilities {
   .text-shadow {
