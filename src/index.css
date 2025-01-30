@@ -51,6 +51,9 @@
   .hoverItem:hover::before {
     width: 100%;
   }
+  .description {
+    @apply font-lora font-normal text-lg text-primaryFont tracking-[0.36px];
+  }
   .btn {
     @apply px-5 py-2 bg-primary text-white rounded-md text-lg font-bold transition duration-200; /* Add your styles here */
   }
@@ -102,6 +105,19 @@
     -moz-transform: translate();
     -ms-transform: translate();
     -o-transform: translate();
+
+  }
+  .frustratedList {
+    position: relative;
+    padding-left: 30px;
+  }
+  .frustratedList::before {
+    content: url("./assets/question.png");
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 @layer utilities {

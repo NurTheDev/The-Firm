@@ -32,12 +32,12 @@ const Partner = () => {
   return (
     <div className="text-center my-24 container">
       <Title firstText={"Our"} secondText={"Partner"} />
-      <Slider {...settings} className="w-4/5 mx-auto mt-16">
+      <Slider {...settings} className=" mt-16">
         {partner.map((data) => (
-          <div key={data.id} className="px-8">
+          <div key={data.id} className="px-8 ">
             {" "}
             {/* Add padding for gap */}
-            <div className="bg-[#F6F6F6] p-6 rounded-xl flex items-center justify-center shadow-md">
+            <div className="bg-[#F6F6F6] p-6 rounded-xl flex items-center justify-center shadow-md hover:shadow-2xl transition">
               <img
                 className="w-[120px] h-[120px] object-contain imgGrayscale"
                 src={data.img}
