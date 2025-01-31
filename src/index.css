@@ -55,7 +55,7 @@
     @apply font-lora font-normal text-lg text-primaryFont tracking-[0.36px];
   }
   .btn {
-    @apply px-5 py-2 bg-primary text-white rounded-md text-lg font-bold transition duration-200; /* Add your styles here */
+    @apply px-5 py-2 bg-primary text-white rounded-md text-lg font-bold transition duration-200 text-center; /* Add your styles here */
   }
   .btn:hover {
     @apply bg-primaryFont text-white /* Add your styles here */;
@@ -73,6 +73,9 @@
     height: 100%;
     background: url("./assets/bannerFull.png") no-repeat center center/cover;
     z-index: -1;
+  }
+  .cardTitle{
+    @apply text-2xl font-bold text-primaryFont;
   }
   .title {
     @apply text-[44px] font-black text-primaryFont; /* Add your styles here */
