@@ -1,21 +1,19 @@
-import React from "react";
-
 import Button from "./Button";
 
 const card = ({ img, heading, descript, profile, profileName }) => {
   return (
-    <div className="px-3 py-2 w-96 bg-white rounded-2xl gap-x-8">
+    <div className=" card">
       <picture>
-        <img src={img} alt="" />
+        <img className="w-full" src={img} alt="" />
       </picture>
-      <div className="py-7 space-y-2 border-b-[#FDFDFD] border-b">
+      <div className="py-7 space-y-2 border-b-[#ddd8d8] border-b">
         <h4 className="cardTitle">{heading} </h4>
         <p className="description">{descript} </p>
       </div>
-      <div className="flexRowBetween mt-5">
-        <div className="flex gap-x-3">
+      <div className="flexRowBetween my-5 w-full">
+        <div className="flex gap-x-3 items-center justify-between ">
           <div>
-            <img src={profile} alt="" />
+            <img src={profile} alt="" className="mt-2" />
           </div>
           <p>{profileName}</p>
         </div>
@@ -23,7 +21,9 @@ const card = ({ img, heading, descript, profile, profileName }) => {
           <p>28,Aug 2020, 09:48:00</p>
         </div>
       </div>
-      <Button btnContant={"Read More"} />
+      <div className="flex justify-center pb-8">
+        <Button btnContant={"Read More"} />
+      </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Header from "./component/Header";
 import Partner from "./Partner";
 import Frustration from "./component/Frustration";
 import Blogs from "./component/Blogs";
+import Solution from "./component/Solution";
 const App = () => {
   return (
     <>
@@ -11,7 +12,8 @@ const App = () => {
       <Banner />
       <Partner />
       <Frustration />
-      <Blogs/>
+      <Blogs />
+      <Solution />
     </>
   );
 };

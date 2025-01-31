@@ -54,6 +54,12 @@
   .description {
     @apply font-lora font-normal text-lg text-primaryFont tracking-[0.36px];
   }
+  .solutionBg {
+    background: url("./assets/solution.png") no-repeat;
+    background-size: contain 100%;
+    background-position: left;
+
+  }
   .btn {
     @apply px-5 py-2 bg-primary text-white rounded-md text-lg font-bold transition duration-200 text-center; /* Add your styles here */
   }
@@ -74,8 +80,15 @@
     background: url("./assets/bannerFull.png") no-repeat center center/cover;
     z-index: -1;
   }
-  .cardTitle{
+  .cardTitle {
     @apply text-2xl font-bold text-primaryFont;
+  }
+  .card {
+    width: calc(100% / 3 - 40px);
+    @apply px-3 py-2 bg-white rounded-2xl gap-x-8 border border-[rgba(250,202,16,0.40)] transition-all duration-300;
+  }
+  .card:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.14);
   }
   .title {
     @apply text-[44px] font-black text-primaryFont; /* Add your styles here */
@@ -97,6 +110,9 @@
   .titleUnderline:hover::before {
     width: 0;
   }
+  .heading2 {
+    @apply text-3xl font-bold text-primaryFont; /* Add your styles here */
+  }
   .imgGrayscale {
     filter: grayscale(100%);
     transition: all 0.3s;
@@ -108,7 +124,6 @@
     -moz-transform: translate();
     -ms-transform: translate();
     -o-transform: translate();
-
   }
   .frustratedList {
     position: relative;
