@@ -17,7 +17,6 @@ const Partner = () => {
     { id: 5, img: safari },
     // { id: 6, img: window },
   ];
-  console.log(partner);
   const settings = {
     dots: false,
     infinite: true,

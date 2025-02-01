@@ -60,6 +60,12 @@
     background-position: left;
 
   }
+  .hoverBar{
+    position: relative;
+  }
+  .hoverBar::before{
+    content: "";
+  }
   .btn {
     @apply px-5 py-2 bg-primary text-white rounded-md text-lg font-bold transition duration-200 text-center; /* Add your styles here */
   }
