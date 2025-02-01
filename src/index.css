@@ -61,10 +61,27 @@
 
   }
   .hoverBar{
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    transition: all 0.3s ease;  
+    @apply w-6 h-6 bg-primary rounded-full -mr-7 ;
   }
   .hoverBar::before{
     content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    right : -33px;
+    top: 12px;
+    background: var(--primaryColor);
+    transition: all 0.3s ease;
+  }
+  .hover:hover .hoverBar{
+    left: -55px;
+  }
+  .hover:hover .hoverBar::before{
+    width: 40px;
   }
   .btn {
     @apply px-5 py-2 bg-primary text-white rounded-md text-lg font-bold transition duration-200 text-center; /* Add your styles here */

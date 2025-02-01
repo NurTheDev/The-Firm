@@ -1,8 +1,8 @@
-const HoverButton = () => {
+const HoverButton = ({contant}) => {
   return (
-    <div className="flex items-center ">
-        <div className="w-6 h-6 bg-primary rounded-full mr-4"></div>
-      <div><p className="bg-primary py-3 px-9 text-white text-lg font-black">Branding</p></div>
+    <div className="flex items-center hover">
+        <div className="relative"><div className=" hoverBar"></div></div>
+      <div><p className="bg-primary py-3 px-9 text-white text-lg font-black">{contant}</p></div>
       
     </div>
   )
