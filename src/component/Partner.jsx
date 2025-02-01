@@ -1,9 +1,9 @@
-import Title from "./component/common/Title";
-import brave from "./assets/partner/brave.png";
-import firefox from "./assets/partner/firefox.png";
-import opera from "./assets/partner/opera.png";
-import google from "./assets/partner/google.png";
-import safari from "./assets/partner/safari.png";
+import Title from "./common/Title";
+import brave from "../assets/partner/brave.png";
+import firefox from "../assets/partner/firefox.png";
+import opera from "../assets/partner/opera.png";
+import google from "../assets/partner/google.png";
+import safari from "../assets/partner/safari.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

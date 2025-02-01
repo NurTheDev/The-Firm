@@ -175,6 +175,12 @@
     top: 5px;
     left: -80px;
   }
+  .nextArrow {
+    @apply w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-lg font-bold absolute top-0; /* Add your styles here */
+  }
+  .prevArrow {
+    @apply w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-lg font-bold absolute  bottom-0 z-1; /* Add your styles here */
+  }
 }
 @layer utilities {
   .text-shadow {

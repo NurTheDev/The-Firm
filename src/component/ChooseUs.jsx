@@ -5,7 +5,7 @@ import Button from "./common/Button";
 const ChooseUs = () => {
   return (
     <div className="bg-secondary">
-      <div className="container mt-72">
+      <div className="container mt-72 py-32">
         <div className="pt-24 text-center ">
           <Title firstText={"Reason to Choose "} secondText={"Us"} />
           <p className="w-1/2 mx-auto mt-7 description">
