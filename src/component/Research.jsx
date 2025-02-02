@@ -1,6 +1,10 @@
+import PropTypes from "prop-types";
 import Title from "./common/Title";
 import Button from "./common/Button";
 import reaserhImg from "../assets/research.png";
+import HeadingImg from "../assets/Rectangle 64.png";
+import HeadingImg2 from "../assets/secondsCard.png";
+import HeadingImg3 from "../assets/thirdCard.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -24,7 +28,7 @@ function SamplePrevArrow(props) {
 }
 const Research = () => {
   const settings = {
-    dots: true,
+    dots: false,
     fade: true,
     infinite: true,
     speed: 500,
@@ -37,8 +41,9 @@ const Research = () => {
 
   const ResearchImg = [
     { id: 1, name: reaserhImg },
-    { id: 2, name: reaserhImg },
-    { id: 3, name: reaserhImg },
+    { id: 2, name: HeadingImg },
+    { id: 3, name: HeadingImg2 },
+    { id: 4, name: HeadingImg3 },
   ];
   return (
     <div className="bg-white py-24 ">
@@ -53,7 +58,7 @@ const Research = () => {
             not only five centuries,
           </p>
         </div>
-        <div className="mt-14 flexRowBetween ">
+        <div className="mt-14 flex justify-around items-center ">
           <div className="flexCol items-start w-1/3 space-y-4">
             <h3 className="heading2">Lorem Ipsum is simply</h3>
             <p className="description">
@@ -67,12 +72,16 @@ const Research = () => {
             </p>
             <Button btnContant={"Read More"} />
           </div>
-          <div className="slider-container w-1/2 relative">
-            <Slider {...settings}>
+          <div className="slider-container w-1/3 relative bgCircle">
+            <Slider {...settings} className="bg-white rounded-3xl p-3 ">
               {ResearchImg.map((data) => {
                 return (
                   <div key={data.id}>
-                    <img src={data.name} alt="" />
+                    <img
+                      className="w-full rounded-3xl object-contain"
+                      src={data.name}
+                      alt=""
+                    />
                   </div>
                 );
               })}
@@ -83,5 +92,8 @@ const Research = () => {
     </div>
   );
 };
-
+Research.propTypes = {
+  className: PropTypes.string,
+  onclick: PropTypes.string,
+};
 export default Research;

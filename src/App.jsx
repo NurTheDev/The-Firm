@@ -7,6 +7,7 @@ import Blogs from "./component/Blogs";
 import Solution from "./component/Solution";
 import ChooseUs from "./component/ChooseUs";
 import Research from "./component/Research";
+import Testimonial from "./component/common/Testimonial";
 const App = () => {
   return (
     <>
@@ -14,10 +15,11 @@ const App = () => {
       <Banner />
       <Partner />
       <Frustration />
-      <Blogs />
       <Solution />
       <ChooseUs />
       <Research />
+      <Blogs />
+      <Testimonial />
     </>
   );
 };

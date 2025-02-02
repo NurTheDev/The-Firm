@@ -176,10 +176,37 @@
     left: -80px;
   }
   .nextArrow {
-    @apply w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-lg font-bold absolute top-0; /* Add your styles here */
+    border-radius: 0 50% 50% 0;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    -ms-border-radius: 0 50% 50% 0;
+    -o-border-radius: 0 50% 50% 0;
+    @apply w-12 h-10 bg-primary flex items-center justify-center text-primaryFont text-lg font-bold absolute top-11 opacity-55 hover:opacity-100 transition-all duration-300; /* Add your styles here */
   }
   .prevArrow {
-    @apply w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-lg font-bold absolute  bottom-0 z-1; /* Add your styles here */
+    border-radius: 50% 0 0 50%;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    -ms-border-radius: 50% 0 0 50%;
+    -o-border-radius: 50% 0 0 50%;
+    @apply w-12 h-10 bg-primary flex items-center justify-center text-primaryFont text-lg font-bold absolute -left-9 top-11 z-1 opacity-55 hover:opacity-100 transition-all duration-300; /* Add your styles here */
+  }
+  .bgCircle::before {
+    content: url(./assets/circle.png);
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    /* z-index: 10; */
+  }
+  .image-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @layer utilities {
