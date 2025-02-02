@@ -3,7 +3,8 @@ import testimonialImg from "../../assets/testimonialImg.jpg";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
-// import { Pagination } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
+
 const Testimonial = () => {
   const testImg = [
     { id: 1, name: testimonialImg },
@@ -25,16 +26,20 @@ const Testimonial = () => {
           grabCursor={true}
           loop={true}
           //   navigation
-          //   pagination={{
-          //     clickable: true,
-          //   }}
-          //   modules={[navigation]}
-          //   className="mySwiper"
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
         >
           <div>
             {testImg.map((data) => (
               <SwiperSlide key={data.id}>
-                <div className="w-[250px] h-[250px] rounded-full image-wrapper fourth">
+                <div
+                  className={`w-[250px] h-[250px] rounded-full image-wrapper ${
+                    data.id === 3 ? "fourth" : ""
+                  }`}
+                >
                   <img
                     className="rounded-full object-cover w-full h-full"
                     src={data.name}
@@ -44,15 +49,6 @@ const Testimonial = () => {
               </SwiperSlide>
             ))}
           </div>
-          {/* <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide> */}
         </Swiper>
       </div>
     </div>
