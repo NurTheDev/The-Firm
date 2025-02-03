@@ -7,7 +7,8 @@ import Blogs from "./component/Blogs";
 import Solution from "./component/Solution";
 import ChooseUs from "./component/ChooseUs";
 import Research from "./component/Research";
-import Testimonial from "./component/common/Testimonial";
+import GetinTouch from "./component/GetinTouch";
+// import Testimonial from "./component/common/Testimonial";
 const App = () => {
   return (
     <>
@@ -19,7 +20,8 @@ const App = () => {
       <ChooseUs />
       <Research />
       <Blogs />
-      <Testimonial />
+      <GetinTouch />
+      {/* <Testimonial /> */}
     </>
   );
 };
