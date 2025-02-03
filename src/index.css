@@ -227,7 +227,20 @@
     transform: scale(0.7) !important;
     opacity: 0.7 !important;
   } */
+  .bgMap {
+    background: url("./assets/map.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 396px;
+  }
+  .customPosition {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
+
 @layer utilities {
   .text-shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
