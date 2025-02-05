@@ -21,9 +21,9 @@ const App = () => {
       <ChooseUs />
       <Research />
       <Blogs />
+      <Testimonial />
       <GetinTouch />
       <Footer />
-      <Testimonial />
     </>
   );
 };
