@@ -9,7 +9,7 @@ import ChooseUs from "./component/ChooseUs";
 import Research from "./component/Research";
 import GetinTouch from "./component/GetinTouch";
 import Footer from "./component/Footer";
-// import Testimonial from "./component/common/Testimonial";
+import Testimonial from "./component/common/Testimonial";
 const App = () => {
   return (
     <>
@@ -23,7 +23,7 @@ const App = () => {
       <Blogs />
       <GetinTouch />
       <Footer />
-      {/* <Testimonial /> */}
+      <Testimonial />
     </>
   );
 };

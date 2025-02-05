@@ -10,7 +10,7 @@ const Label = ({ labelFor, Title, inputId, inputType, placeholder }) => {
       </label>
       <input
         id={inputId}
-        className="py-3 px-[10px] text-primaryFont border-b-2 border-b-[#A5A5A5] text-lg w-full"
+        className="py-3 px-[10px] text-primaryFont border-b-2 border-b-[#A5A5A5] text-lg w-full focus:outline-none"
         type={inputType}
         placeholder={placeholder}
       />

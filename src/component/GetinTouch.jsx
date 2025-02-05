@@ -24,25 +24,25 @@ const GetinTouch = () => {
               placeholder="Enter Your Name"
             />
             <Label
-              labelFor="name"
-              Title="Name"
-              inputId="name"
-              inputType="text"
-              placeholder="Enter Your Name"
+              labelFor="email"
+              Title="Email"
+              inputId="email"
+              inputType="email"
+              placeholder="Enter Your Email"
+            />
+            <Label
+              labelFor="number"
+              Title="Phone"
+              inputId="number"
+              inputType="number"
+              placeholder="+0 968 856 1524"
             />
             <Label
               labelFor="name"
-              Title="Name"
+              Title="Subject"
               inputId="name"
               inputType="text"
-              placeholder="Enter Your Name"
-            />
-            <Label
-              labelFor="name"
-              Title="Name"
-              inputId="name"
-              inputType="text"
-              placeholder="Enter Your Name"
+              placeholder="Choose Your Subject"
             />
           </div>
           <div className="mt-16">
