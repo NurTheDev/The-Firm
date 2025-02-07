@@ -29,6 +29,6 @@ const Banner = ({ title, description, img }) => {
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  img: PropTypes.img,
+  img: PropTypes.string,
 };
 export default Banner;

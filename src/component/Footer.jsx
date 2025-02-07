@@ -6,7 +6,7 @@ const Footer = () => {
     { id: 2, icon: <i className="fa-brands fa-twitter"></i> },
     { id: 3, icon: <i className="fa-brands fa-youtube"></i> },
     { id: 4, icon: <i className="fa-brands fa-linkedin-in"></i> },
-    { id: 4, icon: <i className="fa-brands fa-pinterest-p"></i> },
+    { id: 5, icon: <i className="fa-brands fa-pinterest-p"></i> },
   ];
   return (
     <div>

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import Title from "./common/Title";
-import Button from "./common/Button";
-import reaserhImg from "../assets/research.png";
+import Title from "../component/common/Title";
+import Button from "../component/common/Button";
+import reaserhImg from "../assets/Causes/card3Banner.png";
 import HeadingImg from "../assets/Rectangle 64.png";
 import HeadingImg2 from "../assets/secondsCard.png";
 import HeadingImg3 from "../assets/thirdCard.png";
@@ -46,21 +46,11 @@ const Research = () => {
     { id: 4, name: HeadingImg3 },
   ];
   return (
-    <div className="bg-white py-24 ">
+    <div className="bg-[#f6f6f6] pb-10">
       <div className="container">
-        <div className="flexCol items-center">
-          <Title firstText={"Our Research & Case "} secondText={"Studies"} />
-          <p className="description mt-7 w-2/3 text-center">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries,
-          </p>
-        </div>
-        <div className="mt-14 flex justify-around items-center ">
-          <div className="flexCol items-start w-1/3 space-y-4">
-            <h3 className="heading2">Lorem Ipsum is simply</h3>
+        <div className=" flexRowBetween py-16 ">
+          <div className="flexCol items-start w-1/3 space-y-4 ">
+            <Title firstText={"Find Your"} secondText={"Solution"} />
             <p className="description">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry standard dummy text
@@ -68,11 +58,19 @@ const Research = () => {
               type Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum has been the industry&apos;s
               standard dummy text ever since the 1500s, when an unknown printer
-              took.
+              took. Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type Lorem Ipsum is simply dummy text of
+              the printing and typesetting industry.
             </p>
-            <Button btnContant={"Read More"} />
+            <div className="flex gap-x-5 mt-10">
+              <Button btnContant={"Digital Partners"} />
+              <Button btnContant={"Coaching"} />
+            </div>
           </div>
-          <div className="slider-container w-1/3 relative bgCircle">
+          <div className="slider-container w-[50%] relative bgCircle">
             <Slider {...settings} className="bg-white rounded-3xl p-3 ">
               {ResearchImg.map((data) => {
                 return (
