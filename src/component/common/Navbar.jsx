@@ -13,7 +13,7 @@ const navbar = () => {
         {menuItems.map((item) => {
           return (
             <li key={item.id} className="hoverItem">
-              <a href="">{item.name}</a>
+              <a href="../../../causes.html">{item.name}</a>
             </li>
           );
         })}

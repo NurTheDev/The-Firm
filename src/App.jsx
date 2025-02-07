@@ -10,11 +10,18 @@ import Research from "./component/Research";
 import GetinTouch from "./component/GetinTouch";
 import Footer from "./component/Footer";
 import Testimonial from "./component/common/Testimonial";
+import BannerImg from "./assets/banner.png";
 const App = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner
+        title={"Get Bussiness Solutions with TheFirm."}
+        description={
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."
+        }
+        img={BannerImg}
+      />
       <Partner />
       <Frustration />
       <Solution />

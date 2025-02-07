@@ -10,7 +10,7 @@ const Footer = () => {
   ];
   return (
     <div>
-      <div className="container mt-96 py-12">
+      <div className="container py-12">
         <div className="flexCol items-center space-y-12">
           <div>
             <picture>

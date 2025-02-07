@@ -23,6 +23,7 @@ const Blogs = () => {
             }
             profile={avater}
             profileName={"Alex Liones"}
+            time={"28,Aug 2020, 09:48:00"}
           />
           <Card
             img={HeadingImg2}
@@ -32,6 +33,7 @@ const Blogs = () => {
             }
             profile={avater2}
             profileName={"Alex Liones"}
+            time={"28,Aug 2020, 09:48:00"}
           />
           <Card
             img={HeadingImg3}
@@ -41,6 +43,7 @@ const Blogs = () => {
             }
             profile={avater3}
             profileName={"Alex Liones"}
+            time={"28,Aug 2020, 09:48:00"}
           />
         </div>
       </div>

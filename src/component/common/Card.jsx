@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const card = ({ img, heading, descript, profile, profileName }) => {
+const card = ({ img, heading, descript, profile, profileName, time }) => {
   return (
     <div className=" card">
       <picture>
@@ -17,8 +17,8 @@ const card = ({ img, heading, descript, profile, profileName }) => {
           </div>
           <p>{profileName}</p>
         </div>
-        <div className="text-[10px]">
-          <p>28,Aug 2020, 09:48:00</p>
+        <div className="text-[10px] text-[#B0B0B0]">
+          <p>{time}</p>
         </div>
       </div>
       <div className="flex justify-center pb-8">
